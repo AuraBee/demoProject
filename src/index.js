@@ -7,6 +7,9 @@ import './index.css';
 const SectionMain = styled.div`
 background: pink;
 width: 900px;
+margin: 0 auto;
+margin-bottom: 1em;
+text-align:center;
 
 `
 const Title = styled.h1`
@@ -22,11 +25,18 @@ const Title = styled.h1`
 const ListGroup = styled.ul`
     display: flex;
     justify-content: center;
+    width: 50%;
+    margin: 0 auto;
 `
 
 const ListItems = styled.li`
     color:blue;
-    padding: 2em;
+    display: inline-block;
+    padding: 1em 4em;
+    margin: 2em;
+    width: 150ch;
+    list-style: none;
+  
 `
 const Section = styled.div`
     background: ivory;
@@ -117,6 +127,7 @@ class Main extends React.Component {
 
 
 // const footerElement=<div>The grande foot</div>
+
 ReactDOM.render(<Main/>, document.getElementById('root'))
 
 
