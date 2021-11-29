@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components'
 import HeaderContent from './HeaderContent'
-import SectionContent from './SectionContent';
+import SectionContent from './SectionContent'
+import FooterContent from './FooterContent'
 import './index.css';
 
 
@@ -14,7 +15,9 @@ class Main extends React.Component {
           
             <div>
                 <SectionContent/>
-            </div>     
+            </div>  
+            
+                <FooterContent/>   
             </>
 
         );
