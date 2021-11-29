@@ -1,113 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components'
+import HeaderContent from './HeaderContent'
+import SectionContent from './SectionContent';
 import './index.css';
 
-
-const SectionMain = styled.div`
-background: pink;
-width: 900px;
-margin: 0 auto;
-margin-bottom: 1em;
-text-align:center;
-
-`
-const Title = styled.h1`
-        margin: 0 auto;
-        margin:0 0 .5em 0;
-        padding: 1em 0;
-        border-radius: 10px;
-        text-align:center;
-        font-family:font-family: 'Gluten', cursive;
-
-`
-
-const ListGroup = styled.ul`
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 0 auto;
-`
-
-const ListItems = styled.li`
-    color:blue;
-    display: inline-block;
-    padding: 1em 4em;
-    margin: 2em;
-    width: 150ch;
-    list-style: none;
-  
-`
-const Section = styled.div`
-    background: ivory;
-    margin: 4px;
-    width: 800px;
-    margin: 0 auto;
-    //height: 150px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Gluten', cursive;
-    font-size: 40px;
-    color: purple;
-    border: 3px solid grey;
-
-`
-
-
-const SectionTitle = styled.div`
-    color: cornflowerblue;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    // width: 50px;
-    border-right: solid 3px pink;
-
-`
 
 class Main extends React.Component {
     render() {
         return(
-            <>
-            <SectionMain>
-            <Title>Bee Reacts</Title>
-            <ListGroup>
-                <ListItems>Hey</ListItems>
-                <ListItems>There</ListItems>
-                <ListItems>Now</ListItems>
-            </ListGroup>
-            </SectionMain>
-
-
+            <> 
+            <HeaderContent/>
+          
             <div>
-                <Section>
-                    <SectionTitle>
-                       Nav List React!
-                    </SectionTitle>
-                </Section>
-
-
-                <Section>
-                    <SectionTitle>
-                        Article React!
-                    </SectionTitle>
-                </Section>
-
-
-                <Section>
-                    <SectionTitle>
-                        Aside React!
-                    </SectionTitle>
-                </Section>
-
-                
-                <Section>
-                    <SectionTitle>
-                        Footer React!
-                    </SectionTitle>
-                </Section>
-                </div>
-
+                <SectionContent/>
+            </div>     
             </>
 
         );
